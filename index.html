@@ -1,0 +1,17 @@
+---
+layout: list
+---
+
+<!-- 首页即博客列表 -->
+{% assign list = site.posts %}
+{% assign preview = true %}
+{% assign limitation = 10 %}
+
+{% include list_public.tpl %}
+
+
+{% if list == null %}
+<article class="empty">
+	<p>该分类下还没有文章</p>
+</article>
+{% endif %}

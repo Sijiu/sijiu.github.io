@@ -1,0 +1,82 @@
+title: 半天的半天
+description: 欢迎来到半天的半天
+baseurl: ''
+theme: jekyll-theme-cayman
+markdown: kramdown
+rouge: true
+safe: false
+permalink: /posts/:title.html
+
+exclude:
+  - README.md
+
+name: 半天的半天
+host: sijiu.github.io
+desc: 与半天的半天 思考, 记录, 观察, 探索
+
+defaults:
+  - scope:
+        path: custom/_posts
+        type: posts
+    values:
+        permalink: custom/posts/:title
+        layout: post
+  - scope:
+        path: world/_posts
+    values:
+        permalink: world/posts/:title
+        layout: post
+
+custom:
+    category:
+        default: To Life
+        another: Another
+        program: 编程
+        personal: personal
+        diary: diary
+        reproduce: 开源转载
+
+    hide: personal_diary_world/
+
+    categories:
+      - name:  personal
+        title: personal
+
+      - name:  diary
+        title: 日记
+
+      - name:  default
+        title: To Life
+
+      - name:  another
+        title: Another
+
+      - name:  program
+        title: 编程
+
+      - name:  reproduce
+        title: 开源转载
+
+tags_path : /tags.html
+
+meta:
+    author:
+        name: 半天的半天
+        email: mxh403@163.com
+#        disqus: 1757957                              # Disqus缩略标识
+#        gcse: 008234092874476365914:ygzovwyok10     # Google自定义搜索标识ID
+        github: sijiu                              # GitHub账号
+#        gravatar: e1235ae56900647c5ec6b73c9a8d9e30  # Gravatar头像标识
+
+#    disqus: http://v2.uyan.cc/code/uyan.js    # Disqus评论的JS地址
+#    gapi: http://www.google.com/jsapi               # Google API地址
+#    gravatar: http://en.gravatar.com/avatar/        # Gravatar头像服务器地址
+gitalk:
+  enable: false
+  clientID: b32d57ea8d3f2aea8e88
+  clientSecret: 878ead811ae1150a50e9a15950626298ab79362a
+  repo: btalk
+  owner: Sijiu
+  admin: Sijiu
+
+

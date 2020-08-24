@@ -1,0 +1,13 @@
+---
+layout: post
+title: work summary
+category: personal
+---
+* 目录
+{:toc}
+
+上周任务：
+8/17 -8/21：
+1. 添加运营转码接入增值CP的FTP转码；
+2. 对接CP接入转码系统， 部署测试；
+3. 处理奇艺下载异常和新频道抓取问题修改；

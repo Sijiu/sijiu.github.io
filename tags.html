@@ -1,0 +1,25 @@
+---
+layout: list
+title: Tags
+---
+
+
+<ul class="tag_box inline">
+  {% assign tags_list = site.tags %}
+  {% include header.tpl %}
+  {% include tags_list.tpl %}
+</ul>
+<p style="margin-bottom: 10px;">&nbsp;</p>
+
+{% for tag in site.tags %}
+<div name="tags_div" id="{{ tag[0] }}_div" class="tag_hide">
+  <h2 id="{{ tag[0] }}-ref" >{{ tag[0] }}</h2>
+  <ul>
+    {% assign list = tag[1] %}
+    {% include list_public.tpl %}
+  </ul>
+</div>
+{% endfor %}
+
+<script type="text/javascript">
+</script>
