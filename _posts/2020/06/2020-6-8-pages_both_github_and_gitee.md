@@ -23,7 +23,8 @@ tags:
 - 然后在 idea 中打开项目, 菜单栏操作: "VCS -> Git -> Remotes... " 选中 `origin`那一行, 点击
 编辑(右侧铅笔形按钮), 将`origin` 改为 `github`  
 - 再点击添加(右侧＋按钮), name 填 `gitee`, url 填上边创建的gitee pages 仓库地址 `https://gitee.com/mplain/mplain.git`  
-- 切换分支到 github 的 pages 分支下, commit 和 push .md 文章, 然后本地新建分支推送到 gitee, 拉取上一步 push 到github的文章, push即可  
+- 切换分支到 github 的 pages 分支下, commit 和 push .md 文章, 然后本地新建分支推送到 gitee, 拉取上一步 push 到github的文章, push即可。   
+`切记是本地新建分支， 推送到新库的远程 ` 不然会引起很多不必要的麻烦。  
 > github pages 会自动编译.md 文章为静态页面, 大约5s 左右刷新.io 页面即可看到;   
 > gitee page 个人版和企业免费版, 则需要推送完 在"服务, pages" 页面下手动更新, 美中不足吧, 毕竟大家都要吃饭;
 
