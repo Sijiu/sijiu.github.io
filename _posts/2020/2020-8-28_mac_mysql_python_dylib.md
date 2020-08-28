@@ -75,5 +75,4 @@ tags: python MySQLdb libmysqlclient MacOs
     查看SIP 状态：csrutil status
     关闭 SIP：   csrutil disabled
     打开 SIP：   csrutil enabled   
---
 
