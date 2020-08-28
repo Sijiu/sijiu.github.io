@@ -11,27 +11,30 @@ tags: python MySQLdb libmysqlclient MacOs
 ### 1. mac 下 python2 连接 MySql 的方式
 #### 1.1 安装 MySQLdb 即 pip install mysql-python  
     问题最多， 本文主要记录这种方式安装过程的坑  
-#### 1.2 使用 mysqlclient， pip install mysqlclient 方式  
-    兼容 1.1 只是连接总是有 （'2006'， ''）报错
+#### 1.2 使用 mysqlclient， pip install mysqlclient 方式    
+    兼容 1.1 只是连接总是有 （'2006'， ''）报错  
 #### 1.3 使用 PyMySQL， pip install PyMySQL, python3 基本都用这个  
     不兼容 1.1 和 1.2   
 
-### 2. brew 安装 mysql 后安装
+### 2. brew 安装 mysql 后安装  
     使用 brew install mysql@5.6 安装 mysql 后 pip install mysql-python 会`可能`报错：
-    1. EvironmentError:mysql_config not found
-    2. _mysql.c:44:10: fatal error: 'my_config.h' file not found
-        #include "my_config.h"
-                 ^~~~~~~~~~~~~
-        1 error generated.
-        error: command 'cc' failed with exit status 1
-    3. 等等  
-* 网上的解决办法大多因为环境和版本不同等原因， 成功率很低。
-### 3. 未安装 mysql 直接安装
+    1. EvironmentError:mysql_config not found  
+    2. _mysql.c:44:10: fatal error: 'my_config.h' file not found  
+        #include "my_config.h"  
+                 ^~~~~~~~~~~~~  
+        1 error generated. 
+        error: command 'cc' failed with exit status 1  
+    3. 等等    
+* 网上的解决办法大多因为环境和版本不同等原因， 成功率很低。  
+
+### 3. 未安装 mysql 直接安装  
     需要去安装    
-    libmysqld-dev
+    libmysqld-dev  
     libmysqlclient-dev 等包， 而且安装完后报错基本同 2 
     
-* 总之2， 3 都没能顺利解决， 不建议使用  
+    
+* 总之2， 3 都没能顺利解决， 不建议使用    
+
 ### 4. 下载 mysql-xxx.dmg 安装包安装 mysql 后安装  
 #### 4.1 下载 [mysql-5.6.26-osx10.9-x86_64.dmg](https://mac.filehorse.com/download-mysql/5662/old-versions/) 并安装启动； 
     安装完， 会在 系统偏好设置 里有 MySQL， 点击run 就好  
