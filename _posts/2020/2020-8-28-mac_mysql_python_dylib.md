@@ -9,10 +9,12 @@ tags: python MySQLdb libmysqlclient MacOs
 
 > 因为重装系统缘故， 之前 mac 下安装使用 dmg 方式都没有任何问题， 这次用 brew 引发惨案。
 ### 1. mac 下 python2 连接 MySql 的方式
-#### 1.1 安装 MySQLdb 即 pip install mysql-python  
+#### 1.1 安装 MySQLdb 即 pip install mysql-python   
     问题最多， 本文主要记录这种方式安装过程的坑  
+    
 #### 1.2 使用 mysqlclient， pip install mysqlclient 方式    
-    兼容 1.1 只是连接总是有 （'2006'， ''）报错  
+    兼容 1.1 只是连接总是有 （'2006'， ''）报错   
+    
 #### 1.3 使用 PyMySQL， pip install PyMySQL, python3 基本都用这个  
     不兼容 1.1 和 1.2   
 
@@ -35,8 +37,8 @@ tags: python MySQLdb libmysqlclient MacOs
     
 * 总之2， 3 都没能顺利解决， 不建议使用    
 
-### 4. 下载 mysql-xxx.dmg 安装包安装 mysql 后安装  
-#### 4.1 下载 [mysql-5.6.26-osx10.9-x86_64.dmg](https://mac.filehorse.com/download-mysql/5662/old-versions/) 并安装启动； 
+### 4. 下载 mysql-xxx.dmg 安装包安装 mysql 后安装   
+#### 4.1 下载 [mysql-5.6.26-osx10.9-x86_64.dmg](https://mac.filehorse.com/download-mysql/5662/old-versions/) 并安装启动；   
     安装完， 会在 系统偏好设置 里有 MySQL， 点击run 就好  
     系统里可能没有 mysql 命令， 将 /usr/local/mysql/bin 添加到 ～/.zshrc 中， 并 source ～/.zshrc
     
@@ -44,7 +46,8 @@ tags: python MySQLdb libmysqlclient MacOs
     1. 终端 mysqladmin variables -p
 
     2. 进入 mysql> show global variables;
-#### 4.2 安装， pip install mysql-python（基本都能安装成功）  
+#### 4.2 安装， pip install mysql-python（基本都能安装成功）   
+ 
 #### 4.3 使用中可能报错与解决：
     1 image not found  
     File "/Users/plain/venv/lib/python2.7/site-packages/MySQLdb/__init__.py", line 19, in <module>
