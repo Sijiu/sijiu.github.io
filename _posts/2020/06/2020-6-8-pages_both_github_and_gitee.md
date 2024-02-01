@@ -23,10 +23,13 @@ tags:
 - 然后在 idea 中打开项目, 菜单栏操作: "VCS -> Git -> Remotes... " 选中 `origin`那一行, 点击
 编辑(右侧铅笔形按钮), 将`origin` 改为 `github`  
 - 再点击添加(右侧＋按钮), name 填 `gitee`, url 填上边创建的gitee pages 仓库地址 `https://gitee.com/mplain/mplain.git`  
-- 切换分支到 github 的 pages 分支下, commit 和 push .md 文章, 然后本地新建分支推送到 gitee, 拉取上一步 push 到github的文章, push即可。   
-`切记是本地新建分支， 推送到新库的远程 ` 不然会引起很多不必要的麻烦。  
+- 1. 切换分支到本地 github 的 pages 分支下, commit 和 push .md 文章到远程 github 的 pages 分支;  
+- 2. 然后本地新建gitee 的 pages 分支, 拉取上一步 push 到github 的 pages 分支的文章到本地 gitee pages 分支, push 到 gitee 的 pages 分支;
+- 3. 至此, 2 对分支(github pages local+remote, gitee pages local+remote) 的代码一致. 2024-02-01 15:51:16[修订]
+`切记是本地新建分支， 推送到对应库的远程 ` 不然会引起很多不必要的麻烦。  
+3. 
 > github pages 会自动编译.md 文章为静态页面, 大约5s 左右刷新.io 页面即可看到;   
-> gitee page 个人版和企业免费版, 则需要推送完 在"服务, pages" 页面下手动更新, 美中不足吧, 毕竟大家都要吃饭;
+> gitee page 个人版和企业免费版, 则需要推送完 在"服务, pages" 页面下手动更新(2024 编辑发现还要实名认证, 上传身份证正反面照片及本人持证正反面四张照片,简直了), 美中不足吧, 毕竟大家都要吃饭;
 
 ### 3. 拓展 gitlab, 企业 pages等
 > 同时发布gitlab pages 也一样, 通上边, 先创建 pages 仓库, 然后 remote 添加即可
