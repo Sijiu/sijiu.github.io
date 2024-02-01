@@ -22,7 +22,7 @@ tags:
 -- 以 github 为例, `git clone https://github.com/Sijiu/sijiu.github.io.git`  
 -- 然后在 idea 中打开项目, 菜单栏操作: "VCS -> Git -> Remotes... " 选中 `origin`那一行, 点击
 编辑(右侧铅笔形按钮), 将`origin` 改为 `github`  
-- 再点击添加(右侧＋按钮), name 填 `gitee`, url 填上边创建的gitee pages 仓库地址 `https://gitee.com/mplain/mplain.git`  
+-- 再点击添加(右侧＋按钮), name 填 `gitee`, url 填上边创建的gitee pages 仓库地址 `https://gitee.com/mplain/mplain.git`  
 -  2.1 切换分支到本地 github 的 pages 分支下, commit 和 push .md 
   文章到远程 github 的 pages 分支;  
 -  2.2 然后本地新建gitee 的 pages 分支, 拉取上一步 push 到github 的 pages 分支的文章到本地 gitee pages 分支, push 到 gitee 的 pages 分支;  
