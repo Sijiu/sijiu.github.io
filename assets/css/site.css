@@ -78,6 +78,8 @@ article a.diary, section a.diary,
 .diary a {background: #eaf2d3;}
 article a.program, section a.program,
 .program a {color: #6495ed !important;}
+article a.accumulation, section a.accumulation,
+.accumulation a {color: #073fa3 !important;}
 article a.personal, section a.personal,
 .personal a {color: #b0c4de !important;}
 article a.another, section a.another,

@@ -31,6 +31,7 @@ custom:
     category:
         default: To Life
         another: Another
+        accumulation: 积累
         program: 编程
         personal: personal
         diary: diary
