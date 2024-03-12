@@ -7,7 +7,7 @@ tags: 行业
 * 目录
 {:toc}  
 > [国民经济行业分类](https://www.stats.gov.cn/search/s?qt=国民经济分类)
-> [行业.xlsx](2024/03/industry.xlsx)
+> [行业.xlsx](industry.xlsx)
 
 1. A农林牧渔
 2. B采矿业
