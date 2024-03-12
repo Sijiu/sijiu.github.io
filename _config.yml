@@ -48,6 +48,9 @@ custom:
       - name:  default
         title: To Life
 
+      - name: accumulation
+        title: 积累系列
+
       - name:  another
         title: Another
 
